@@ -1,0 +1,3 @@
+This project consists of an encrypted file transfer application operating in a Client-Server architecture:
+- **Client**: Connects to the server, authenticates over a secure channel, performs **End-to-End Encryption (E2EE)** natively on the files using AES in CTR mode, and derives secrets locally using a high-iteration Password-Based Key Derivation Function. 
+- **Server**: Receives data passively. It stores files completely encrypted on disk and does not have the capability to decrypt the contents.
